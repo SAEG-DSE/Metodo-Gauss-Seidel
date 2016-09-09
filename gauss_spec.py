@@ -20,3 +20,6 @@ class TestGauss(unittest.TestCase):
         self.gauss.convergencia_d1() |should| be_less_than(1)
         self.gauss.convergencia_d2() |should| be_less_than(1)
         self.gauss.convergencia_d3() |should| be_less_than(1)
+
+    def test_primeira_iteracao_x(self):
+        self.gauss.iteraX(0,0) |should| equal_to(0.7)

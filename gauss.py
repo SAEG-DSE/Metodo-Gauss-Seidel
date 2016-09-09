@@ -15,4 +15,6 @@ class Gauss(object):
         d3 = ( (abs(self.matriz[2][0]) * self.convergencia_d1() + abs(self.matriz[2][1]) * self.convergencia_d2() ) / float(abs(self.matriz[2][2])) )
         return round(d3, 3)
 
-     
+    def iteraX(self,variavel_y,variavel_z):
+        valor_x = abs((7 -2*variavel_y - variavel_z)/10.0)
+        return valor_x
